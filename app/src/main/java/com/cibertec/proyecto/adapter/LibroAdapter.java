@@ -33,8 +33,9 @@ public class LibroAdapter extends ArrayAdapter<Libro>  {
         View row = inflater.inflate(R.layout.activity_libro_item, parent, false);
 
         Libro obj = lista.get(position);
+
         TextView txtId = row.findViewById(R.id.itemIdLibro);
-        txtId.setText(String.valueOf(obj.getIdLibro()));
+        txtId.setText("ID :"+String.valueOf(obj.getIdLibro()));
 
         TextView txtTitulo = row.findViewById(R.id.itemTituloLibro);
         txtTitulo.setText("Título :"+obj.getTitulo());
