@@ -29,7 +29,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class RevistaRegistraActivity extends NewAppCompatActivity {
-
+/*
     //Modalidad
     Spinner spnModalidad;
     ArrayAdapter<String> adaptadorModalidad;
@@ -47,14 +47,14 @@ public class RevistaRegistraActivity extends NewAppCompatActivity {
 
     //Componentes del formulario
     Button btnRegistrar;
-    EditText txtNombre, txtFrecuencia, txtFecCreacion;
-
+    EditText txtNombre, txtFrecuencia, txtFecCreacion, txtFecReg;
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_revista_registra);
-
+/*
         //conecta a los servicios Rest
         serviceModalidad = ConnectionRest.getConnection().create(ServiceModalidad.class);
         servicePais = ConnectionRest.getConnection().create(ServicePais.class);
@@ -64,6 +64,7 @@ public class RevistaRegistraActivity extends NewAppCompatActivity {
         txtNombre = findViewById(R.id.idTxtNombre);
         txtFrecuencia = findViewById(R.id.idTxtFrecuencia);
         txtFecCreacion = findViewById(R.id.idTxtFecCreacion);
+        txtFecReg = findViewById(R.id.idtxtFechaReg);
         btnRegistrar = findViewById(R.id.idBtnRegistrar);
 
         adaptadorModalidad = new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, modalidad);
@@ -83,6 +84,7 @@ public class RevistaRegistraActivity extends NewAppCompatActivity {
                 String nom = txtNombre.getText().toString();
                 String frec = txtFrecuencia.getText().toString();
                 String fecc = txtFecCreacion.getText().toString();
+                String fecr = txtFecReg.getText().toString();
                 String idModalidad= spnModalidad.getSelectedItem().toString().split(":")[0];
                 String idPais= spnPais.getSelectedItem().toString().split(":")[0];
 
@@ -98,6 +100,7 @@ public class RevistaRegistraActivity extends NewAppCompatActivity {
                 objRevista.setFrecuencia(frec);
                 objRevista.setFechaCreacion(fecc);
                 objRevista.setFechaRegistro(FunctionUtil.getFechaActualStringDateTime());
+                objRevista.setFechaRegistro(fecr);
                 objRevista.setEstado(1);
                 objRevista.setModalidad(objModalidad);
                 objRevista.setPais(objPais);
@@ -106,8 +109,8 @@ public class RevistaRegistraActivity extends NewAppCompatActivity {
 
             }
         });
-    }
-
+    }*/
+/*
     public void mensajeToast(String mensaje){
         Toast toast1 =  Toast.makeText(getApplicationContext(),mensaje, Toast.LENGTH_LONG);
         toast1.show();
@@ -119,8 +122,8 @@ public class RevistaRegistraActivity extends NewAppCompatActivity {
         alertDialog.setCancelable(true);
         alertDialog.show();
     }
-
-
+*/
+/*
     public void cargaModalidad(){
         Call<List<Modalidad>> call = serviceModalidad.listaTodos();
         call.enqueue(new Callback<List<Modalidad>>() {
@@ -141,8 +144,8 @@ public class RevistaRegistraActivity extends NewAppCompatActivity {
                 mensajeToast("Error al acceder al Servicio Rest >>> " + t.getMessage());
             }
         });
-    }
-
+    }*/
+/*
     public void cargaPais(){
         Call<List<Pais>> call = servicePais.listaTodos();
         call.enqueue(new Callback<List<Pais>>() {
@@ -164,13 +167,13 @@ public class RevistaRegistraActivity extends NewAppCompatActivity {
             }
         });
     }
-
+*//*
     public  void insertaRevista(Revista objRevista){
         //Gson gson = new GsonBuilder().setPrettyPrinting().create();
         //String json = gson.toJson(objEditorial);
-        //mensajeAlert(json);
-
-        Call<Revista> call = serviceRevista.insertaRevista(objRevista);
+        //mensajeAlert(json);*/
+/*
+        Call<Revista> call = serviceRevista.registra(objRevista);
         call.enqueue(new Callback<Revista>() {
             @Override
             public void onResponse(Call<Revista> call, Response<Revista> response) {
@@ -187,7 +190,7 @@ public class RevistaRegistraActivity extends NewAppCompatActivity {
                 mensajeToast("Error al acceder al Servicio Rest >>> " + t.getMessage());
             }
         });
+    }*/
+
     }
-
-
 }

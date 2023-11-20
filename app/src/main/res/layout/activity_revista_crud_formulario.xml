@@ -5,7 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vista.crud.RevistaCrudFormularioActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,6 +25,79 @@
         android:text="@string/txt_crud_de_revista"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:id="@+id/txtCrudTitulo"/>
+
+            <EditText
+                android:id="@+id/txtCrudNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Nombre"/>
+
+            <EditText
+                android:id="@+id/txtCrudFrecuencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Frecuencia"/>
+
+            <EditText
+                android:id="@+id/txtCrudFecCreacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Fecha de Creacion"/>
+
+            <EditText
+                android:id="@+id/txtCrudFecRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Fecha de Registro"/>
+
+            <Spinner
+                android:id="@+id/spnCrudRevistaEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spnCrudRevistaModalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"/>
+
+            <Spinner
+                android:id="@+id/spnCrudRevistaPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnCrudRevistaRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="REGISTRAR"/>
+
+            <Button
+                android:id="@+id/btnCrudRevistaRegresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="REGRESAR"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
