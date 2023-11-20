@@ -18,5 +18,25 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCrudRevistaLista"
+        android:text="Listar"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCrudRevistaRegistra"
+        android:text="Registrar"
+        android:padding="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/idCrudRevistaListView"
+        android:padding="10dp" />
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>
