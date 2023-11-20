@@ -1,6 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal"
+android:weightSum="7"
+android:padding="10dp">
+
+<TextView
+    android:id="@+id/txtID"
+    android:layout_width="54dp"
+    android:layout_height="100dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:text="ID"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="26dp"
+    tools:layout_editor_absoluteY="25dp" />
+
+<TextView
+    android:id="@+id/lblNombre"
+    android:layout_width="80dp"
+    android:layout_height="20dp"
+    android:text="Nombre"
+    app:layout_constraintStart_toEndOf="@+id/txtID"
+    tools:layout_editor_absoluteY="25dp"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/txtNombre"
+    android:layout_width="200dp"
+    android:layout_height="20dp"
+    android:text="Nombre"
+    app:layout_constraintStart_toEndOf="@+id/lblNombre"
+    tools:layout_editor_absoluteY="25dp"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/lblApellido"
+    android:layout_width="80dp"
+    android:layout_height="20dp"
+    android:text="Apellido"
+    app:layout_constraintStart_toEndOf="@+id/txtID"
+    app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+    tools:layout_editor_absoluteY="25dp"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/txtApellido"
+    android:layout_width="200dp"
+    android:layout_height="20dp"
+    android:text="Apellido"
+    app:layout_constraintStart_toEndOf="@+id/lblApellido"
+    app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+    tools:layout_editor_absoluteY="25dp"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/lblCorreo"
+    android:layout_width="80dp"
+    android:layout_height="20dp"
+    android:text="Correo"
+    app:layout_constraintStart_toEndOf="@+id/txtID"
+    app:layout_constraintTop_toBottomOf="@+id/txtApellido"
+    tools:layout_editor_absoluteY="25dp"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/txtCorreo"
+    android:layout_width="200dp"
+    android:layout_height="20dp"
+    android:text="Correo"
+    app:layout_constraintTop_toBottomOf="@+id/txtApellido"
+    app:layout_constraintStart_toEndOf="@+id/lblCorreo" />
+
+<TextView
+    android:id="@+id/lblNacimiento"
+    android:layout_width="80dp"
+    android:layout_height="20dp"
+    android:text="Nacimiento"
+    app:layout_constraintTop_toBottomOf="@+id/txtCorreo"
+    app:layout_constraintStart_toEndOf="@+id/txtID"
+    tools:layout_editor_absoluteY="25dp"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/txtFechaNac"
+    android:layout_width="200dp"
+    android:layout_height="20dp"
+    android:text="Nacimiento"
+    app:layout_constraintStart_toEndOf="@+id/lblNacimiento"
+    app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+<TextView
+    android:id="@+id/lblCelular"
+    android:layout_width="80dp"
+    android:layout_height="20dp"
+    android:text="Celular"
+    app:layout_constraintTop_toBottomOf="@+id/lblNacimiento"
+    app:layout_constraintStart_toEndOf="@+id/txtID"
+    tools:layout_editor_absoluteY="25dp"
+    tools:ignore="MissingConstraints" />
+
+<TextView
+    android:id="@+id/txtCelular"
+    android:layout_width="200dp"
+    android:layout_height="20dp"
+    android:text="Celular"
+    app:layout_constraintStart_toEndOf="@+id/lblCelular"
+    app:layout_constraintTop_toBottomOf="@+id/txtFechaNac" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
