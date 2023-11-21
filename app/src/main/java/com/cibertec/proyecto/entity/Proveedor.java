@@ -1,6 +1,8 @@
 package com.cibertec.proyecto.entity;
 
-public class Proveedor {
+import java.io.Serializable;
+
+public class Proveedor implements Serializable {
     private int idProveedor;
     private String razonsocial;
     private String ruc;

@@ -31,7 +31,7 @@ public class ProveedorAdapter extends ArrayAdapter<Proveedor>  {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View row = inflater.inflate(R.layout.activity_proveedor_consulta_item,parent,false);
+        View row = inflater.inflate(R.layout.activity_proveedor_crud_item,parent,false);
 
         Proveedor objProveedor = lista.get(position);
 
@@ -42,7 +42,7 @@ public class ProveedorAdapter extends ArrayAdapter<Proveedor>  {
         txtRuc.setText("Ruc: " + String.valueOf(objProveedor.getRuc()));
 
         TextView txtRazSoc = row.findViewById(R.id.txtRazonSocial);
-        txtRazSoc.setText("Razon Social: " + String.valueOf(objProveedor.getRazonsocial()));
+        txtRazSoc.setText("RazonSocial: " + String.valueOf(objProveedor.getRazonsocial()));
 
         TextView txtDireccion = row.findViewById(R.id.txtDireccion);
         txtDireccion.setText("Direccion: " + String.valueOf(objProveedor.getDireccion()));
@@ -52,6 +52,19 @@ public class ProveedorAdapter extends ArrayAdapter<Proveedor>  {
 
         TextView txtCelular = row.findViewById(R.id.txtCelular);
         txtCelular.setText("Celular: " + String.valueOf(objProveedor.getCelular()));
+
+        TextView txtContacto = row.findViewById(R.id.txtContacto);
+        txtContacto.setText("Contacto: " + String.valueOf(objProveedor.getContacto()));
+
+        TextView txtEstado = row.findViewById(R.id.txtEstado);
+        txtEstado.setText("Estado: " + String.valueOf(objProveedor.getEstado()));
+
+        TextView txtPais = row.findViewById(R.id.txtPais);
+        txtPais.setText("Pais: " + String.valueOf(objProveedor.getPais().getNombre()));
+
+        TextView txtTipoProveedor = row.findViewById(R.id.txtTipoProveedor);
+        txtTipoProveedor.setText("Tipo Proveedor: " + String.valueOf(objProveedor.getTipoProveedor().getDescripcion()));
+
 
 
         return row;
