@@ -8,6 +8,7 @@
     android:padding="15sp"
     tools:context=".vista.crud.AlumnoCrudListaActivity">
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,6 +20,26 @@
         android:textStyle="bold" />
 
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCrudAlumnoLista"
+        android:text="Lista"
+        android:padding="10dp"/>
 
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idCrudAlumnoRegistra"
+        android:text="Registra"
+        android:padding="10dp"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/idCrudAlumnoListView"
+        android:padding="10dp" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
