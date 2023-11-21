@@ -31,35 +31,35 @@ public class AlumnoAdapter extends ArrayAdapter<Alumno>  {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View row = inflater.inflate(R.layout.activity_alumno_consulta_item, parent,false);
+        View row = inflater.inflate(R.layout.activity_alumno_crud_item, parent,false);
 
         Alumno objAlumno = lista.get(position);
 
-        TextView txtID = row.findViewById(R.id.txtId);
+        TextView txtID = row.findViewById(R.id.txtItemId);
         txtID.setText("ID : " + String.valueOf(objAlumno.getIdAlumno()));
 
-        TextView txtNombres = row.findViewById(R.id.txtNombres);
+        TextView txtNombres = row.findViewById(R.id.txtItemNombre);
         txtNombres.setText("Nombre : " + objAlumno.getNombres());
 
-        TextView txtApellidos = row.findViewById(R.id.txtApellidos);
+        TextView txtApellidos = row.findViewById(R.id.txtItemApellido);
         txtApellidos.setText("Apellidos : " + objAlumno.getApellidos());
 
-        TextView txtTelefono = row.findViewById(R.id.txtTelefono);
+        TextView txtTelefono = row.findViewById(R.id.txtItemTelefono);
         txtTelefono.setText("Serie : " + objAlumno.getTelefono());
 
-        TextView txtDni = row.findViewById(R.id.txtDni);
+        TextView txtDni = row.findViewById(R.id.txtItemDni);
         txtDni.setText("Dni : " + objAlumno.getDni());
 
-        TextView txtFechaNacimiento = row.findViewById(R.id.txtFechaNacimiento);
+        TextView txtFechaNacimiento = row.findViewById(R.id.txtItemFechNac);
         txtFechaNacimiento.setText("Fecha Nacimiento : " + objAlumno.getFechaNacimiento());
 
-        TextView txtCorreo = row.findViewById(R.id.txtCorreo);
+        TextView txtCorreo = row.findViewById(R.id.txtItemCorreo);
         txtCorreo.setText("Correo : " + objAlumno.getCorreo());
 
-        TextView txtPais = row.findViewById(R.id.txtPais);
+        TextView txtPais = row.findViewById(R.id.txtItemPais);
         txtPais.setText("País : " + objAlumno.getPais().getNombre());
 
-        TextView txtModalidad = row.findViewById(R.id.txtModalidad);
+        TextView txtModalidad = row.findViewById(R.id.txtItemModalidad);
         txtModalidad.setText("Modalidad : " + objAlumno.getModalidad().getDescripcion());
 
         return row;
