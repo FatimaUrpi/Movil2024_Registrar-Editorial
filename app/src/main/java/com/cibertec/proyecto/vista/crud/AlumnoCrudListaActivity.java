@@ -79,7 +79,7 @@ public class AlumnoCrudListaActivity extends NewAppCompatActivity {
 
                 Intent intent = new Intent(
                         AlumnoCrudListaActivity.this,
-                        Alumno.class);
+                        AlumnoCrudFormularioActivity.class);
 
                 intent.putExtra("var_tipo", "Actualizar");
                 intent.putExtra("var_seleccionado",objDataSeleccionada);
