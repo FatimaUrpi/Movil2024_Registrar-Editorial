@@ -59,7 +59,7 @@ public class EditorialConsultaActivity extends NewAppCompatActivity {
 
     public void consulta(String filtro) {
 
-            Call<List<Editorial>> call = serviceEditorial.listaporEditorial(filtro);
+            Call<List<Editorial>> call = serviceEditorial.listaEditorial(filtro);
             call.enqueue(new Callback<List<Editorial>>() {
                 @Override
                 public void onResponse(Call<List<Editorial>> call, Response<List<Editorial>> response) {
