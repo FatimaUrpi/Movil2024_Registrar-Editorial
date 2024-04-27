@@ -5,10 +5,10 @@
 * **Jorge Jacinto **
 
 ## Grupo  ✒️
-* 201922360 Arica Ramos, Kevin Agustin
-* 201820714 Goicochea Guevara, Jeymi Grem
-* 202011197	Hernandez Condori, Jhanio Javier
-* 202124085 Patricio Uribe, Kira Sayuri
-* 201513018	Salinas Mendoza, Mayra Estefany
-* 201712266 Talledo Sullon, Jezrel
+N00056840	RAMOS	QUISPE	YHEREMI FERMIN	YheremiRamos
+N00057018	MANRIQUE	CONDORI	ZARELA EUGENIA	ZarelaMC
+N00056826	URPI	CHAVEZ	FATIMA VICTORIA	FatimaUrpi
+N00057014	MARLO	VILLANUEVA	LESLIE YESENIA	lesliemarlo
+N00056830	SILVERA	SOTELO	MILUSKA SALOME	MiluskaSss
+
 
