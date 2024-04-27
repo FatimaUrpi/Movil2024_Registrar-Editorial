@@ -7,6 +7,14 @@ public class Modalidad implements Serializable {
     private int idModalidad;
     private String  descripcion;
 
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
     public int getIdModalidad() {
         return idModalidad;
     }
@@ -15,11 +23,5 @@ public class Modalidad implements Serializable {
         this.idModalidad = idModalidad;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
 }
