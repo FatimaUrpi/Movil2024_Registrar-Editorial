@@ -14,16 +14,10 @@ import retrofit2.http.Path;
 
 public interface ServiceLibro {
 
-    @POST("libro")
-    public abstract Call<Libro> insertaLibro(@Body Libro objLibro);
 
     @GET("libro/porTitulo/{titulo}")
     public Call<List<Libro>> listaPorTitulo(@Path("titulo")String titulo);
 
-    @GET("libro")
-    public abstract Call<List<Libro>> listaLibro();
 
-    @PUT("libro")
-    public abstract Call<Libro> actualiza(@Body Libro objLibro);
 
 }

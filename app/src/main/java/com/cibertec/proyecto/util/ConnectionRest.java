@@ -7,7 +7,7 @@ public class ConnectionRest {
 
     private static Retrofit retrofit ;
 
-    private static final String URL = "https://api-cibertec-moviles.herokuapp.com/servicio/";
+    private static final String URL = "https://app-rest-cibertec-210f267f7414.herokuapp.com/";
 
     public static Retrofit getConnection(){
         if (retrofit == null){

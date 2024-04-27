@@ -7,40 +7,6 @@
     tools:context=".vista.consulta.AlumnoConsultaActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:padding="10dp"
-        android:text="@string/txt_consulta_de_alumno"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:id="@+id/idTxtAlumnoConsulta"
-        />
-
-    <Button
-        android:id="@+id/idBtnLibroConsulta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Filtrar"
-        android:padding="10dp"
-
-        />
-
-    <ListView
-        android:id="@+id/idLstAlumnoConsulta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="2dp"
-
-        />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

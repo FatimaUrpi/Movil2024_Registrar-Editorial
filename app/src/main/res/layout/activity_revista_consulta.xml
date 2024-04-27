@@ -8,44 +8,6 @@
     android:layout_margin="20dp"
     >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:padding="10dp"
-        android:text="Consulta de Revista - Talledo"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:padding="5dp"
-        android:text="Revista:"
-        android:textSize="20sp"
-        android:textAlignment="center"/>
-
-    <EditText
-        android:id="@+id/txtRegEdiNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:minHeight="48dp"
-        android:padding="5dp" />
-
-    <Button
-        android:id="@+id/btnListaRevistaConsulta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Listar"
-        />
-
-    <ListView
-        android:id="@+id/lstRevista"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
 
 
