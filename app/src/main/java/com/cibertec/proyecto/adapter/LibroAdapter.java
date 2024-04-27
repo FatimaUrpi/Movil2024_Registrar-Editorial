@@ -35,10 +35,10 @@ public class LibroAdapter extends ArrayAdapter<Libro>  {
         Libro obj = lista.get(position);
 
         TextView txtId = row.findViewById(R.id.itemIdLibro);
-        txtId.setText("ID :"+String.valueOf(obj.getIdLibro()));
+        txtId.setText("ID :"+String.valueOf(obj.getIdLibro())); //int
 
         TextView txtTitulo = row.findViewById(R.id.itemTituloLibro);
-        txtTitulo.setText("Título :"+obj.getTitulo());
+        txtTitulo.setText("Título :"+obj.getTitulo()); //string
 
         TextView txtAnio = row.findViewById(R.id.itemAnioLibro);
         txtAnio.setText("Año :"+obj.getAnio());

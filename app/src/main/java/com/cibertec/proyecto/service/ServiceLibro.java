@@ -15,7 +15,7 @@ import retrofit2.http.Path;
 public interface ServiceLibro {
 
 
-    @GET("libro/porTitulo/{titulo}")
+    @GET("service/libro/porTitulo/{titulo}")
     public Call<List<Libro>> listaPorTitulo(@Path("titulo")String titulo);
 
 
